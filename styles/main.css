@@ -5,10 +5,12 @@ body {
     margin: 0 auto;
 }
 h1 {
-    color: white;
+    color: rgb(182, 63, 63);
     font-size: 55px;
     margin: 20px auto;
     text-align: center;
+    text-shadow: 0 0 10px black;
+
 }
 .container {
     display: flex;
@@ -42,8 +44,10 @@ h1 {
 
 .element__image{
     /* border: solid 3px red; */
+    display: flex;
     width: 250px;
     align-self: center;
+    justify-content: center;
     padding-left: 10px;
 }
 
