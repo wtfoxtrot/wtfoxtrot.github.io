@@ -122,6 +122,36 @@
 
 
 
+        <!--************************** start copy *****************************************-->
+        <div class="element">
+            <div class="element__image">
+                <a class="lightbox" href="#misconfiguredCSRF"> <!-- change the href to match id at the bottom-->
+                    <img src="images/misconfiguredCSRF.jpg"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+             <div class="element__description">
+               <h3>Misconfigured CSRF</h3> <!-- Add title here -->
+               <p>There are several places too look. Most likely a type</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+              <h3>&nbsp</h3>
+
+                 <span class="element__solution">1) On the app.js, check the csrfProtection for typos: const <span class="terminal--font">csrfProtection = csrf({ cookie: true });</span> This got me deferred >:(</span>
+                 <span class="element__solution">2) Make sure csrfProtection is being passed as a parameter (see#2 in pic).</span>
+                 <span class="element__solution">3) Make sure the token(invoked) is passed in the response object (see #3 in pic).</span>
+                 <span class="element__solution">4) Make sure the input value in the Pug file corresponds to the key value in the response object.</span>
+
+            </div>
+        </div>
+                               <!-- make sure id matches above --  change image below -->
+        <div class="lightbox-target" id="misconfiguredCSRF"><img src="images/misconfiguredCSRF.jpg"/><a class="lightbox-close" href="#"></a></div>
+        <!--************************** end copy *****************************************-->
+
+
+
+
         </div>
     </div>
 </body>

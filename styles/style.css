@@ -54,7 +54,7 @@ h1 {
 }
 
 .element__solutions{
-    margin: 0 10px;
+    margin: 0 10px 15px 0;
 }
 .element__solution {
     display: block;
