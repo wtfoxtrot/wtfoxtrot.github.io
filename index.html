@@ -162,7 +162,7 @@
         </div>
     </div>
                            <!-- make sure id matches above --  change image below -->
-    <div class="lightbox-target" id="_csrfFieldError"><img src="images/_csrfFieldError.png"/><a class="lightbox-close" href="#_csrfFieldError"></a></div>
+    <div class="lightbox-target" id="_csrfFieldError"><img src="images/_csrfFieldError.png"/><a class="lightbox-close" href="#"></a></div>
     <!--************************** end copy *****************************************-->
 
     <!--************************** start copy *****************************************-->
@@ -187,6 +187,62 @@
                            <!-- make sure id matches above --  change image below -->
     <div class="lightbox-target" id="TableRelation"><img src="images/TableRelation.png"/><a class="lightbox-close" href="#_csrfFieldError"></a></div>
     <!--************************** end copy *****************************************-->
+
+
+        <!--************************** start copy *****************************************-->
+        <div class="element">
+            <div class="element__image">
+                <a class="lightbox" href="#misconfiguredCSRF"> <!-- change the href to match id at the bottom-->
+                    <img src="images/misconfiguredCSRF.jpg"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+             <div class="element__description">
+               <h3>Misconfigured CSRF</h3> <!-- Add title here -->
+               <p>There are several places too look. Most likely a type</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+              <h3>&nbsp</h3>
+
+                 <span class="element__solution">1) On the app.js, check the csrfProtection for typos: const <span class="terminal--font">csrfProtection = csrf({ cookie: true });</span> This got me deferred >:(</span>
+                 <span class="element__solution">2) Make sure csrfProtection is being passed as a parameter (see#2 in pic).</span>
+                 <span class="element__solution">3) Make sure the token(invoked) is passed in the response object (see #3 in pic).</span>
+                 <span class="element__solution">4) Make sure the input value in the Pug file corresponds to the key value in the response object.</span>
+
+            </div>
+        </div>
+                               <!-- make sure id matches above --  change image below -->
+        <div class="lightbox-target" id="misconfiguredCSRF"><img src="images/misconfiguredCSRF.jpg"/><a class="lightbox-close" href="#"></a></div>
+        <!--************************** end copy *****************************************-->
+
+
+
+          <!--************************** start copy *****************************************-->
+          <div class="element">
+            <div class="element__image">
+                <a class="lightbox" href="#propertyOfUndefined"> <!-- change the href to match id at the bottom-->
+                    <img src="images/propertyOfUndefined.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+             <div class="element__description">
+               <h3>Cannot read property of 'method' of undefined. </h3> <!-- Add title here -->
+               <p>Ya done spelled something wrong.</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+              <h3>&nbsp</h3>
+
+                 <span class="element__solution">1) Make sure the imported names match the table column name. <span class="terminal--font">Ex: {Pasta, Noodle, Sauce} = require('./models');</span></span>
+
+            </div>
+        </div>
+                               <!-- make sure id matches above --  change image below -->
+        <div class="lightbox-target" id="propertyOfUndefined"><img src="images/propertyOfUndefined.png"/><a class="lightbox-close" href="#"></a></div>
+        <!--************************** end copy *****************************************-->
+
+
 
 
         </div>
