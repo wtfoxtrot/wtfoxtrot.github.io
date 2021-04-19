@@ -243,6 +243,32 @@
         <!--************************** end copy *****************************************-->
 
 
+        <!--************************** start copy *****************************************-->
+        <div class="element" id="#10">
+            <div class="element__image">
+                <a class="lightbox" href="#foreignConstraintViolation"> <!-- change the href to match id at the bottom-->
+                    <img src="images/foreignConstrainViolation.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+             <div class="element__description">
+               <h3>Insert or update on table "TabeName" violates foreign key constraint "Table_columnNameId_fkey"</h3> <!-- Add title here -->
+               <p>One table is referencing a non-existent ID from another table. This could happen if you un-seed and then re-seed, but the primary keys did not reset. </p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+              <h3>&nbsp</h3>
+
+                 <span class="element__solution">1) Drop table and then re-migrate and re-seed.</span>
+                 <span class="element__solution">2) In PostBird, manually change the primary keys to match the appropriate references.</span>
+
+            </div>
+        </div>
+                               <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="foreignConstraintViolation"><img src="images/foreignConstrainViolation.png"/><a class="lightbox-close" href="#10"></a></div>
+        <!--************************** end copy *****************************************-->
+
+
 
 
         </div>
