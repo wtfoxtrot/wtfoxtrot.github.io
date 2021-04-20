@@ -270,6 +270,32 @@
 
 
 
+           <!--************************** start copy *****************************************-->
+           <div class="element" id="#11">
+            <div class="element__image">
+                <a class="lightbox" href="#notASubclass"> <!-- change the href to match id at the bottom-->
+                    <img src="images/belongstToCalledNotSubclass.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+             <div class="element__description">
+               <h3>ModelName.belongsTo called with something that's not a subclass of Sequelize.Model</name></h3> <!-- Add title here -->
+               <p>Seqelize is thinking something does not exist/is not a model</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+              <h3>&nbsp</h3>
+
+                 <span class="element__solution">1) Check the model the .belongsTo is referencing. Most likely a typo. Remember Models should be singular</span>
+
+            </div>
+        </div>
+                               <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="notASubclass"><img src="images/belongstToCalledNotSubclass.png"/><a class="lightbox-close" href="#11"></a></div>
+        <!--************************** end copy *****************************************-->
+
+
+
 
         </div>
     </div>
