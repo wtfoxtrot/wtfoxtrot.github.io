@@ -253,7 +253,7 @@
 
              <div class="element__description">
                <h3>Insert or update on table "TabeName" violates foreign key constraint "Table_columnNameId_fkey"</h3> <!-- Add title here -->
-               <p>One table is referencing a non-existent ID from another table. This could happen if you un-seed and then re-seed, but the primary keys did not reset. </p>  <!-- Add description here -->
+               <p>One table is referencing a non-existent ID from another table. This could happen if you un-seed and then re-seed, but the primary keys did not reset OR if the foreign key is simply not valid. </p>  <!-- Add description here -->
             </div>
 
             <div class="element__solutions">
@@ -261,7 +261,7 @@
 
                  <span class="element__solution">1) Drop table and then re-migrate and re-seed.</span>
                  <span class="element__solution">2) In PostBird, manually change the primary keys to match the appropriate references.</span>
-
+                 <span class="element__solution">3) In the seeder file, make sure the foreign key references something that exists.</span>
             </div>
         </div>
                                <!-- make sure id matches above --  change image below  -- Increment number below in href -->
