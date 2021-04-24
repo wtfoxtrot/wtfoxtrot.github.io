@@ -294,9 +294,147 @@
         <div class="lightbox-target" id="notASubclass"><img src="images/belongstToCalledNotSubclass.png"/><a class="lightbox-close" href="#11"></a></div>
         <!--************************** end copy *****************************************-->
 
+        <!--************************** start copy *****************************************-->
+        <div class="element" id="#12"><!-- increment ID -->
+            <div class="element__image">
+                <a class="lightbox" href="#pgNodeProblem"> <!-- change the href to match id at the bottom-->
+                    <img src="images/pgNodeProblem.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
 
+             <div class="element__description">
+               <h3>Error: Socket error</h3> <!-- Add title here -->
+               <p>There is an issue between the dependencies ‘pg’ and certain versions of Node.js (notably version 14).</p>  <!-- Add description here -->
+            </div>
 
+            <div class="element__solutions">
+              <h3>&nbsp</h3>
+                <span class="element__solution">Solution #1 (uninstall and reinstall pg):
+                    <div>1) In terminal, enter <span class="terminal--font">npm uninstall pg</span>, then enter <span class="terminal--font">npm install pg</span></div>
+                </span>
+                <span class="element__solution">Solution #2 (install an older version of Node.js):
+                    <div>2) In terminal, enter <span class="terminal--font">nvm install 12</span></div>
+                </span><!-- Add solution here -->
+              <!-- <span> Another soution???</span>  -->  <!-- Copy span here if you have another possible solution -->
+            </div>
+        </div>
+                               <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="pgNodeProblem"><img src="images/pgNodeProblem.png"/><a class="lightbox-close" href="#12"></a></div>
+    <!--************************** end copy *****************************************-->
 
+        <!--************************** start copy *****************************************-->
+        <div class="element" id="#13"><!-- increment ID -->
+            <div class="element__image">
+                <a class="lightbox" href="#constantHanging"> <!-- change the href to match id at the bottom-->
+                    <img src="images/constantHanging.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+                <div class="element__description">
+                <h3>Browser hangs after configuring CSRF protection</h3> <!-- Add title here -->
+                <p>After trying to configure CSRF protection, going to any route fails, and the website appears to be constantly loading.  If the server is configured with <span class="terminal--font">morgan</span>, GET requests show blank data in the terminal with the running server.</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+                <h3>&nbsp</h3>
+                <span class="element__solution">
+                    Check if the syntax for setting up the cookieParser middleware.  The correct syntax is <span class="terminal--font">app.use(cookieParser())</span>;  If cookieParser is not invoked [e.g. <span class="terminal--font">app.use(cookieParser)</span>], the observed problem appears.
+                </span>
+                <!-- Add solution here -->
+                <!-- <span> Another soution???</span>  -->  <!-- Copy span here if you have another possible solution -->
+            </div>
+        </div>
+                                <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="constantHanging"><img src="images/constantHanging.png"/><a class="lightbox-close" href="#13"></a></div>
+    <!--************************** end copy *****************************************-->
+
+        <!--************************** start copy *****************************************-->
+        <div class="element" id="#14"><!-- increment ID -->
+            <div class="element__image">
+                <a class="lightbox" href="#cannotFindModule"> <!-- change the href to match id at the bottom-->
+                    <img src="images/cannotFindModule.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+                <div class="element__description">
+                <h3>Error: Cannot find module</h3> <!-- Add title here -->
+                <p>The listed module cannot be found.</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+                <h3>&nbsp</h3>
+                <span class="element__solution">Solution #1:
+                    <div>The module was not installed. In terminal, enter <span class="terminal--font">npm install</span>.</div>
+                </span>
+                <span class="element__solution">Solution #2:
+                    <div>2) There is a typo in the <span class="terminal--font">require</span> statements, check for typos.</div>
+                </span>
+                <!-- Add solution here -->
+                <!-- <span> Another soution???</span>  -->  <!-- Copy span here if you have another possible solution -->
+            </div>
+        </div>
+                                <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="cannotFindModule"><img src="images/cannotFindModule.png"/><a class="lightbox-close" href="#14"></a></div>
+    <!--************************** end copy *****************************************-->
+
+        <!--************************** start copy *****************************************-->
+        <div class="element" id="#15"><!-- increment ID -->
+            <div class="element__image">
+                <a class="lightbox" href="#macNoPostgreSQLPart1"> <!-- change the href to match id at the bottom-->
+                    <img src="images/macNoPostgreSQLPart1.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+                <div class="element__description">
+                <h3>Error: Could not connect to server: No such file or directory</h3> <!-- Add title here -->
+                <p>This problem may appear when trying to open PostgreSQL via the command <span class="terminal--font">psql</span>.</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+                <h3>&nbsp</h3>
+                <span class="element__solution">Solution #1 (For Windows):
+                    <div>In terminal, enter <span class="terminal--font">sudo service postgresql restart</span>.  This may need to be done each time the computer is rebooted.</div>
+                </span>
+                <span class="element__solution">Solution #2 (For Mac):
+                    <div>1) In terminal, enter <span class="terminal--font">brew services restart postgres</span>.</div>
+                    <div>1) In terminal, enter <span class="terminal--font">rm /usr/local/var/postgres/postmaster.pid</span>.</div>
+                </span>
+                <!-- Add solution here -->
+                <!-- <span> Another soution???</span>  -->  <!-- Copy span here if you have another possible solution -->
+            </div>
+        </div>
+                                <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="macNoPostgreSQLPart1"><img src="images/macNoPostgreSQLPart1.png"/><a class="lightbox-close" href="#15"></a></div>
+    <!--************************** end copy *****************************************-->
+        <!--************************** start copy *****************************************-->
+        <div class="element" id="#16"><!-- increment ID -->
+            <div class="element__image">
+                <a class="lightbox" href="#notAFunction"> <!-- change the href to match id at the bottom-->
+                    <img src="images/notAFunction.png"/> <!-- Change image here and below.  This one is for the thumbnail-->
+                </a>
+            </div>
+
+                <div class="element__description">
+                <h3>TypeError: [something].[method] is not a function</h3> <!-- Add title here -->
+                <p>The [something] does not have the [method].</p>  <!-- Add description here -->
+            </div>
+
+            <div class="element__solutions">
+                <h3>&nbsp</h3>
+                <span class="element__solution">
+                    <ul>
+                        <li>Check the given line number for typos.  For example, the method <span class="terminal--font">findAll</span> is not <span class="terminal--font">findALL</span> or <span class="terminal--font">findall</span>.</li>
+                        <li>If [something] is a Model in Sequelize, check that this Model is imported in using <span class="terminal--font">require</span>.</li>
+                        <li>If the given line looks OK, check if the function surrounding that line contains typos.  In one case, the problem was that the <span class="terminal--font">asyncHandler</span> helper function had typos, with <span class="terminal--font">(req, req, next)</span> being used as parameters, instead of <span class="terminal--font">(req, res, next)</span>.  This was on a completely different line that the line mentioned in the error.</li>
+                    </ul>
+                </span>
+                <!-- Add solution here -->
+                <!-- <span> Another soution???</span>  -->  <!-- Copy span here if you have another possible solution -->
+            </div>
+        </div>
+                                <!-- make sure id matches above --  change image below  -- Increment number below in href -->
+        <div class="lightbox-target" id="notAFunction"><img src="images/notAFunction.png"/><a class="lightbox-close" href="#16"></a></div>
+    <!--************************** end copy *****************************************-->
         </div>
     </div>
 </body>
